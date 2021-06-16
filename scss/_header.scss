@@ -8,7 +8,15 @@
     img {
       width: 2rem;
       height: 2rem;
-      margin-right: 6.875rem;
+    }
+  }
+
+  &__links {
+    a {
+      font-size: $medium;
+      &:not(:last-child) {
+        margin-right: 53px;
+      }
     }
   }
 
@@ -17,6 +25,7 @@
       background-color: $blue;
       width: 6.25rem;
       height: 1.875rem;
+      align-self: flex-end;
     }
   }
 
