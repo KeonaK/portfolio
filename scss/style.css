@@ -42,4 +42,20 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.header__logo img {
+  width: 1.625rem;
+  height: 1.625rem;
+}
+
+.header__toggle > span {
+  display: block;
+  background-color: black;
+  height: 1.5px;
+  width: 20px;
+}
+
+.header__toggle > span:not(:last-child) {
+  margin-bottom: 5px;
+}
 /*# sourceMappingURL=style.css.map */

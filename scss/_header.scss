@@ -1,4 +1,21 @@
 .header {
   &__logo {
+    img {
+      width: 1.625rem;
+      height: 1.625rem;
+    }
+  }
+
+  &__toggle {
+    > span {
+      display: block;
+      background-color: black;
+      height: 1.5px;
+      width: 20px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
   }
 }
