@@ -12,11 +12,19 @@
     <title>Keona Kirby | Web Developer</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <!-- will link to the homepage -->
-            <a href="/">
+    <header class="header">
+        <!-- nav needs to be flexbox parent to put everything on the same line
+        create a flex helper class -->
+        <nav class="flex">
+            <!-- will need link to the homepage -->
+            <a href="/" class=header__logo>
                 <img src="./image/logo.svg" alt="logo">
+            </a>
+
+            <a href="#" id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </a>
         </nav>
     </header>
