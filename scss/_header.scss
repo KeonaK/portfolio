@@ -9,20 +9,26 @@
     img {
       width: 2rem;
       height: 2rem;
+
+      @include breakpoints-up(large) {
+        width: 50px;
+        height: 50px;
+      }
     }
   }
 
   &__links {
     a {
+      position: relative;
       font-size: $medium;
+      transition: color 300ms ease-in-out;
 
       &:not(:last-child) {
         margin-right: 53px;
       }
 
       &:hover {
-        color: $yellow;
-        font-weight: 700;
+        font-weight: 600;
       }
     }
   }
@@ -32,7 +38,13 @@
       background-color: $blue;
       width: 6.25rem;
       height: 1.875rem;
-      align-self: flex-end;
+      font-size: $mSubBody;
+
+      @include breakpoints-up(large) {
+        width: 157px;
+        height: 42px;
+        font-size: $mBody;
+      }
     }
   }
 
