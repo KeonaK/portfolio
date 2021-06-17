@@ -122,6 +122,16 @@ a:hover {
   color: black;
 }
 
+.header__container {
+  padding: 1.6875rem;
+}
+
+@media (min-width: 40em) {
+  .header__container {
+    padding: 1rem 10rem;
+  }
+}
+
 button {
   border: none;
   color: white;
@@ -178,11 +188,6 @@ button:hover {
   left: 0px;
 }
 
-.header nav {
-  position: relative;
-  padding: 27px;
-}
-
 .header__logo img {
   width: 2rem;
   height: 2rem;
@@ -214,14 +219,13 @@ button:hover {
   background-color: #2e86ab;
   width: 6.25rem;
   height: 1.875rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 64em) {
   .header__cta button {
     width: 157px;
     height: 42px;
-    font-size: 1rem;
   }
 }
 
@@ -240,5 +244,17 @@ button:hover {
 
 .header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.header__menu {
+  background-color: #fdca40;
+}
+
+.header__menu a {
+  display: block;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
