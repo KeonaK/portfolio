@@ -1,5 +1,6 @@
 .header {
   background-color: $offwhite;
+
   nav {
     position: relative;
     padding: 27px;
@@ -54,9 +55,27 @@
       background-color: black;
       height: 2px;
       width: 26px;
+      transition: all 300ms ease-in-out;
+      transform-origin: 3px 1px;
+
       // if it is not the last child apply the style
       &:not(:last-child) {
         margin-bottom: 5px;
+      }
+    }
+
+    &.open {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      // second span
+      // cannot transition from display block to display none, must use opacity
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+
+      > span:last-child {
+        transform: rotate(-45deg);
       }
     }
   }
