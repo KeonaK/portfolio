@@ -1,5 +1,11 @@
 .header {
-  background-color: $offwhite;
+  nav {
+    margin: 1.6875rem;
+
+    @include breakpoints-up(medium) {
+      margin: 1rem 10rem;
+    }
+  }
 
   &.open {
     .header__toggle {
@@ -62,14 +68,9 @@
   &__cta {
     button {
       background-color: $blue;
-      width: 6.25rem;
-      height: 1.875rem;
+      width: 9.8125rem;
+      height: 2.625rem;
       font-size: $small;
-
-      @include breakpoints-up(large) {
-        width: 157px;
-        height: 42px;
-      }
     }
   }
 
