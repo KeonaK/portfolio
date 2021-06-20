@@ -15,7 +15,17 @@
   }
 
   &__buttons {
-    width: 99.43px;
-    height: 29px;
+    button {
+      width: 99.43px;
+      height: 29px;
+      font-size: $small;
+    }
+
+    .btn1 {
+      background-color: $teal;
+    }
+    .btn2 {
+      background-color: $blue;
+    }
   }
 }
