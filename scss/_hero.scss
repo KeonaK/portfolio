@@ -1,12 +1,21 @@
 .hero {
+  &__section {
+    position: absolute;
+    width: 220px;
+    height: 219px;
+    left: 77px;
+    top: 301px;
+  }
   &__text {
     h1 {
       margin: 0;
+      padding-bottom: 1.375rem;
       font-size: $medium;
       font-weight: 700;
     }
     p {
       margin: 0;
+      padding-bottom: 40px;
       color: #767676;
       font-weight: 600;
       letter-spacing: 0.05em;
@@ -18,14 +27,30 @@
     button {
       width: 99.43px;
       height: 29px;
-      font-size: $small;
+      font-size: 0.875rem;
     }
 
     .btn1 {
       background-color: $teal;
+      margin-right: 14.57px;
     }
     .btn2 {
       background-color: $blue;
     }
+  }
+
+  .image__right {
+    position: absolute;
+    width: 75.7px;
+    height: 30.1px;
+    left: 269.18px;
+    top: 117px;
+  }
+  .image__bottom {
+    position: absolute;
+    width: 140.54px;
+    height: 113.25px;
+    left: 116px;
+    top: 644.31px;
   }
 }
