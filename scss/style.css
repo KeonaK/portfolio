@@ -273,32 +273,35 @@ button:hover {
 
 .hero__section {
   position: absolute;
-  width: 220px;
-  height: 219px;
-  left: 77px;
-  top: 301px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .hero__text h1 {
-  margin: 0;
   padding-bottom: 1.375rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .hero__text p {
-  margin: 0;
   padding-bottom: 40px;
   color: #767676;
+  font-size: 1.25rem;
   font-weight: 600;
+  text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .hero__buttons button {
-  width: 99.43px;
-  height: 29px;
-  font-size: 0.875rem;
+  width: 144.62px;
+  height: 40px;
+  font-size: 1rem;
+  margin: 0 1.6875rem;
 }
 
 .hero__buttons .btn1 {
