@@ -45,10 +45,10 @@ a:hover {
 
 // Spacing
 .container {
-  padding: 0 1.6875rem 1.6875rem 1.6875rem;
+  margin: 1.6875rem;
 
   @include breakpoints-up(medium) {
-    padding: 1rem 13.5rem;
+    margin: 1rem 10rem;
   }
 }
 

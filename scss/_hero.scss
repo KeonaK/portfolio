@@ -1,59 +1,83 @@
 .hero {
-  // position: relative;
-  &__section {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+  height: 100vh;
+  @include breakpoints-up(large) {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  &__image {
+    position: relative;
+    min-height: 11rem;
+    @include breakpoints-up(large) {
+      min-height: 42rem;
+      flex: 1;
+      order: 2;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: url(../image/group-img.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
   &__text {
+    text-align: center;
+
+    @include breakpoints-up(large) {
+      text-align: left;
+      flex: 1;
+      order: 1;
+    }
+
     h1 {
+      margin: 0;
       padding-bottom: 1.375rem;
       font-size: $large;
       font-weight: 700;
-      text-align: center;
+
+      @include breakpoints-up(large) {
+        font-size: $Xlarge;
+      }
     }
     p {
+      margin: 0;
       padding-bottom: 40px;
       color: #767676;
       font-size: $medium;
       font-weight: 600;
-      text-align: center;
       letter-spacing: 0.05em;
       text-transform: uppercase;
+      @include breakpoints-up(large) {
+        font-size: $large;
+        letter-spacing: 0.27em;
+      }
     }
   }
 
-  &__buttons {
+  &__text a {
     button {
       width: 144.62px;
       height: 40px;
       font-size: $small;
-      margin: 0 1.6875rem;
+
+      @include breakpoints-up(large) {
+        width: 284px;
+        height: 42px;
+      }
     }
 
     .btn1 {
       background-color: $teal;
-      margin-right: 14.57px;
+      margin-right: 22.5px;
     }
     .btn2 {
       background-color: $blue;
     }
-  }
-
-  .image__right {
-    position: absolute;
-    width: 75.7px;
-    height: 30.1px;
-    left: 269.18px;
-    top: 117px;
-  }
-  .image__bottom {
-    position: absolute;
-    width: 140.54px;
-    height: 113.25px;
-    left: 116px;
-    top: 644.31px;
   }
 }
